@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HZC | Home</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <button class="cabecalho__menu" aria-label="menu"><i></i></button> <!--aria-label para "ler" do que se trata(por causa da acessibilidade)-->
+        <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="cabecalho__logo">
+        <button class="cabecalho__notificacao" aria-label="notificação"><i></i></button>
+    </header>
+    <nav class="menu-lateral ">    <!--nav.menu-lateral>img.menu-lateral__logo+a[href="#"].menu-lateral__link*6 // .=nome da class; > =criar dentro da tag anterior; + =criar no msm nivel hierarquico; * =qtd que queremos criar-->
+        <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="menu-lateral__logo">
+        <a href="#" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo">Ínicio</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--videos">Vídeos</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--picos">Picos</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--integrantes">Integrantes</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--camisas">Camisas</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--pintura">Pintura</a>
+    </nav>
+    <main class="principal"></main>
+        <h2 class="titulo-principal">Início</h2>
+        <article class="cartao">
+            <img src="assets/img/banner-mobile_1.png" alt="Banner do cartão" class="cartao__imagem">
+            <div class="cartao__conteudo">
+                <p class="cartao__destaque">Vídeo em destaque</p>
+                <h3 class="cartao__titulo">HZC - Título</h3>
+                <p class="cartao__perfil">Bruno Lopez</p>
+                <p class="cartao__info cartao__info--tempo">33 minutos</p>
+                <p class="cartao__info cartao__info--visualizacao">33 visualizações</p>
+                <button class="cartao__botao cartao__botao--play cartao__botao--destaque">Assistir agora</button>
+            </div>
+        </article>
+    <script src="index.js"></script>
+</body>
+</html>
